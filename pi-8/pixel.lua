@@ -1,6 +1,6 @@
 local pixel = {}
 function pixel:draw()
-  local sc = require "Pi-8/sc"
+  local sc = require "pi-8/sc"
   
   local function t(str) io.write(str) end
   local function c() print() end
@@ -27,7 +27,19 @@ end
 
 function pixel:erase()
   local function cls()
-    os.execute("clear")
+    local sc = require 'pi-8/sc'
+    local av = { 
+      ["LINUX"] = function()
+        os.execute("clear")
+      end,
+      ["WINDOWS"] = function()
+        os.execute("cls")
+      end,
+    }
+
+    if av[sc.platform] then
+      av[sc.platform]()
+    end
   end
   cls()
 end
