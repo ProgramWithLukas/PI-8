@@ -2,11 +2,8 @@
 A Lua Game Development Library Inspired By PICO-8
 
 # Current Version
-The Current Version of PI-8 is
-Only At 1.0.0 BETA,
-It's Still Getting Worked on by Me,
-And Development is Going Smoothly.
-I'll try to Make It As Soon As Possible.
+The Current Version of PI-8 Is Now At 1.0.1 RELEASE!!
+More Updates and News Will Be Expected at The future!
 
 # Installation
 Just Drag Or Copy The 'pi-8' Folder to Your Project's Directory, And it Should work as Expected.
