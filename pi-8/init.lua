@@ -1,7 +1,7 @@
 --[[
-  PI-8: 1.0.0 BETA.
+  PI-8: 1.0.0 RELEASE.
 
-  If You are A Tester of this Brand New-
+  If You are Interested of this Brand New-
   Easy to Use Library for Game Development-
   With Only the Console.
 
@@ -9,14 +9,17 @@
   The Github Repository.
 ]]--
 
-local pi8 = {
+_G.pi8 = {
   -- Repository Abouts: 
   version = "PI-8 1.0.0 BETA",
   verCheck = function() print("PI-8 1.0.0 BETA") end,
   
   -- Game Abouts: DEBUG
+  core = 0,
   conf = require "Pi-8/config",
-  run = true,
+  ShouldExit = function(n) if pi8.core == 1 then
+    return true
+  end return false end,
   terminal = require "Pi-8/terminal",
   
   -- Game Abouts: OBJECTS
