@@ -1,0 +1,8 @@
+Available Functions:
+   WaitFor(key: string)
+
+As of Now, The Input Functions Still Block The Program from Running Entirely While still Sensing The Inputs.
+
+    WaitFor(key: string) -> bool:
+Waits For the pressed _key_ Given by The Argument of the Function then returns true if it Is Pressed, And Vice Versa.
+
